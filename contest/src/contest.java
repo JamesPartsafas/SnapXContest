@@ -17,10 +17,9 @@ public class contest {
         try (FileReader reader = new FileReader("C:\\Users\\craig\\OneDrive\\Desktop\\j1.json"))
         
         {     
-        	
-        	Object obj = parser.parse(new FileReader("C:\\\\Users\\\\craig\\\\OneDrive\\\\Desktop\\\\j1.json"));
-            JSONArray jsonList = (JSONArray) obj;
-            System.out.println(jsonList);
+		Object obj = parser.parse(new FileReader("C:\\\\Users\\\\craig\\\\OneDrive\\\\Desktop\\\\j1.json"));
+            	JSONArray jsonList = (JSONArray) obj;
+            	System.out.println(jsonList);
             
             
         } catch (FileNotFoundException e) {
