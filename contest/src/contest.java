@@ -95,8 +95,8 @@ public class contest {
                     	
                     	
                     	//first concatenation (9)
-                    	if (l >= 11 && l < 20) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[0] + " " + receipt[l-10])) == true) {
+                    	if (l >= 0 && l < 9) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[0] + " " + receipt[l+1])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
@@ -104,8 +104,8 @@ public class contest {
                     	}
                     	
                     	//second concatenation (8)
-                    	else if (l >= 20 && l < 28) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[1] + " " + receipt[l-18])) == true) {
+                    	else if (l >= 9 && l < 17) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[1] + " " + receipt[l-7])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
@@ -113,8 +113,8 @@ public class contest {
                     	}
                     	
                     	//third concatenation (7)
-                    	else if (l >= 28 && l < 35) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[2] + " " + receipt[l-25])) == true) {
+                    	else if (l >= 17 && l < 24) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[2] + " " + receipt[l-14])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
@@ -122,8 +122,8 @@ public class contest {
                     	}
                     	
                     	//fourth concatenation (6)
-                    	else if (l >= 35 && l < 41) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[3] + " " + receipt[l-31])) == true) {
+                    	else if (l >= 24 && l < 30) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[3] + " " + receipt[l-20])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
@@ -131,8 +131,8 @@ public class contest {
                     	}
                     	
                     	//fifth concatenation (5)
-                    	else if (l >= 41 && l < 46) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[4] + " " + receipt[l-36])) == true) {
+                    	else if (l >= 30 && l < 35) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[4] + " " + receipt[l-25])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
@@ -140,8 +140,8 @@ public class contest {
                     	}
                     	
                     	//sixth concatenation (4)
-                    	else if (l >= 46 && l < 50) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[5] + " " + receipt[l-40])) == true) {
+                    	else if (l >= 35 && l < 39) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[5] + " " + receipt[l-29])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
@@ -149,8 +149,8 @@ public class contest {
                     	}
                     	
                     	//sixth concatenation (3)
-                    	else if (l >= 50 && l < 53) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[6] + " " + receipt[l-43])) == true) {
+                    	else if (l >= 39 && l < 42) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[6] + " " + receipt[l-32])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
@@ -158,8 +158,8 @@ public class contest {
                     	}
                     	
                     	//sixth concatenation (2)
-                    	else if (l >= 53 && l < 55) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[7] + " " + receipt[l-45])) == true) {
+                    	else if (l >= 42 && l < 44) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[7] + " " + receipt[l-34])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
@@ -167,8 +167,8 @@ public class contest {
                     	}
                     	
                     	//sixth concatenation (1)
-                    	else if (l >= 55 && l < 56) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[8] + " " + receipt[l-46])) == true) {
+                    	else if (l >= 44 && l < 45) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[8] + " " + receipt[l-35])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
@@ -176,7 +176,7 @@ public class contest {
                     	}
                     	
                     	//singles
-            			else if (l >= 0 && l < 11) {
+            			else if (l >= 45 && l < 56) {
 	            			if ((cols[0].equalsIgnoreCase(receipt[l])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
