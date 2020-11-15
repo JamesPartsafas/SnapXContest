@@ -26,7 +26,7 @@ public class contest {
 	            String descriptionTwo = description.replace("\\n", " ");
 	            String delimiter = "\\ ";
 	            String[] keywords = descriptionTwo.split(delimiter, 11);
-	            System.out.println("JSON fil nb: "+j);
+	            System.out.println("JSON file nb: "+j);
 	            for (int i = 0; i < 10; i++) {
 	                System.out.println(keywords[i]);
 	            }  
