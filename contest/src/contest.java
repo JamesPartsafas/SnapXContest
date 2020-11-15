@@ -24,7 +24,6 @@ public class contest {
     	System.out.println("Please enter the file path to your CSV file directory: ");
     	String filePathCSV = keyIn.nextLine();
 
-        
     	//variable initialization block
         String[] receipt = new String[11];
         receipt[10] = "NulL";
@@ -38,7 +37,7 @@ public class contest {
         	
         	//decoding the JSON files into strings
         	try (FileReader reader = new FileReader(filePathJSON + "\\j"+(j+1)+".json")) {
-	            Object obj = parser.parse(new FileReader("C:\\Users\\craig\\Downloads\\Training Json-20201115T162845Z-001\\Training_Json\\j"+(j+1)+".json"));
+	            Object obj = parser.parse(new FileReader(filePathJSON + "\\j"+(j+1)+".json"));
 	            JSONArray jsonArray = (JSONArray) obj;
 	            JSONObject jsonObject = (JSONObject) jsonArray.get(0);
 	            Object textAnnotations = jsonObject.get("textAnnotations");
@@ -77,11 +76,12 @@ public class contest {
             for (int k = 1; k < 3; k++)
             {
                 linenum = 0;
-                BufferedReader br = new BufferedReader(new FileReader(filePathCSV + "\\supplierlist"+k+".csv")); 
+                BufferedReader br = new BufferedReader(new FileReader(filePathCSV + "\\supplierlist"+k+".csv"));                 
                 String line = "";
                 
                 while ( (line = br.readLine()) != null && exit == 0) { 
                     String[] cols = line.split(",");
+ 
                     linenum++;
     
                     //comparison of receipt to CSV files
