@@ -22,10 +22,6 @@ public class contest {
             JSONArray jsonList = (JSONArray) obj;
             System.out.println(jsonList);
             
-            //Object obj = parser.parse(new FileReader("c:\\file.json"));
-        	int var = 5;
-        	
-            //JSONObject jsonObject =  (JSONObject) obj;
             
         } catch (FileNotFoundException e) {
             e.printStackTrace();
