@@ -87,12 +87,13 @@ public class contest {
                 
                 while ( (line = br.readLine()) != null && exit == 0) { 
                     String[] cols = line.split(",");
-                    //System.out.println("File Num: "+k+" "+"Line Num: "+linenum+" "+cols[0]);
                     linenum++;
     
                     //comparison of receipt to CSV files
                     for (int l = 0; l < 56; l++) {
                     	
+                    	if (exit == 1)
+                    		continue;
                     	
                     	//first concatenation (9)
                     	if (l >= 0 && l < 9) {
@@ -147,7 +148,7 @@ public class contest {
 	            				exit = 1;
 	            			}
                     	}
-                    	
+                    	/*
                     	//sixth concatenation (3)
                     	else if (l >= 39 && l < 42) {
 	            			if ((cols[0].equalsIgnoreCase(receipt[6] + " " + receipt[l-32])) == true) {
@@ -173,7 +174,7 @@ public class contest {
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
 	            			}
-                    	}
+                    	}*/
                     	
                     	//singles
             			else if (l >= 45 && l < 56) {
@@ -185,7 +186,7 @@ public class contest {
                     	}
                     	
                     	//in case company is not found
-            			else if (exit != 1 && l == 10 && k == 2 && linenum == 499999) {
+            			else if (exit != 1 && k == 2 && linenum == 499999) {
                         	System.out.println("company not found");
                         }
             			
