@@ -13,22 +13,17 @@ import java.util.Scanner;
 
 
 public class contest {
-
-	
 	
     public static void main(String[] args) throws Exception {
-    	/*
+    	
     	Scanner keyIn = new Scanner(System.in);
 
     	System.out.println("Please enter the file path to your JSON directory:");
     	String filePathJSON = keyIn.nextLine();
     	String temp = keyIn.nextLine();
-    	System.out.println("Please enter the file path to your CSV file directory: ")
+    	System.out.println("Please enter the file path to your CSV file directory: ");
     	String filePathCSV = keyIn.nextLine();
 
-    	try (FileReader reader = new FileReader(filePathJSON + "\\j"+(j+1)+".json"))
-    	    
-    	BufferedReader br = new BufferedReader(new FileReader(filePathCSV + "\\supplierlist"+k+".csv")); */
         
     	//variable initialization block
         String[] receipt = new String[11];
@@ -42,7 +37,7 @@ public class contest {
         for (int j = 0; j<20;j++) {
         	
         	//decoding the JSON files into strings
-	        try (FileReader reader = new FileReader("C:\\Users\\craig\\Downloads\\Training Json-20201115T162845Z-001\\Training_Json\\j"+(j+1)+".json")) {
+        	try (FileReader reader = new FileReader(filePathJSON + "\\j"+(j+1)+".json")) {
 	            Object obj = parser.parse(new FileReader("C:\\Users\\craig\\Downloads\\Training Json-20201115T162845Z-001\\Training_Json\\j"+(j+1)+".json"));
 	            JSONArray jsonArray = (JSONArray) obj;
 	            JSONObject jsonObject = (JSONObject) jsonArray.get(0);
@@ -82,7 +77,7 @@ public class contest {
             for (int k = 1; k < 3; k++)
             {
                 linenum = 0;
-                BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\craig\\OneDrive\\Documents\\supplierList-20201115T203043Z-001\\supplierList\\supplierlist"+k+".csv")); 
+                BufferedReader br = new BufferedReader(new FileReader(filePathCSV + "\\supplierlist"+k+".csv")); 
                 String line = "";
                 
                 while ( (line = br.readLine()) != null && exit == 0) { 
