@@ -177,7 +177,7 @@ public class contest {
                     	
                     	//singles
             			else if (l >= 45 && l < 56) {
-	            			if ((cols[0].equalsIgnoreCase(receipt[l])) == true) {
+	            			if ((cols[0].equalsIgnoreCase(receipt[l-45])) == true) {
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
 	            				exit = 1;
