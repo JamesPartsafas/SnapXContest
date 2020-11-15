@@ -95,7 +95,7 @@ public class contest {
                     	
                     	
                     	//first concatenation (9)
-                    	else if (l >= 11 && l < 20) {
+                    	if (l >= 11 && l < 20) {
 	            			if ((cols[0].equalsIgnoreCase(receipt[0] + " " + receipt[l-10])) == true){
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
@@ -180,7 +180,7 @@ public class contest {
                         }
                     	
                     	//singles
-                    	if (l >= 0 && l < 11) {
+                    	else if (l >= 0 && l < 11) {
 	            			if ((cols[0].equalsIgnoreCase(receipt[l])) == true){
 	            				output = cols[0];
 	            				System.out.println("Company name: " + output +" CSV filenumber: " + k + " SIC4: " +cols[1] + " SIC 8: " + cols[2] + " Line number: " + linenum);
