@@ -1,1 +1,1 @@
-This is the respository for the SnapX contest.
+This is the respository for the SnapX contest, which involves creating a program to gather data from image-generated JSON files and match them to entries in a database of over a million rows. This project was created over the course of a few hours.
